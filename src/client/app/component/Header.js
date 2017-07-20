@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Links from './Links';
+import ProfileLog from './ProfileLog';
 
 const Header = (props) => {
 
@@ -21,6 +22,7 @@ const Header = (props) => {
     return (
         <div className="top-header">
             <Links data={navList} />
+            <ProfileLog key={ProfileLog} />
         </div>
     );
 };
